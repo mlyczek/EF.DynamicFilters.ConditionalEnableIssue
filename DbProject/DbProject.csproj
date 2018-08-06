@@ -52,9 +52,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BlogPost.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeDetails.cs" />
     <Compile Include="Migrations\201807301026504_Initial.cs" />
     <Compile Include="Migrations\201807301026504_Initial.Designer.cs">
       <DependentUpon>201807301026504_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808030840139_AddEmployee.cs" />
+    <Compile Include="Migrations\201808030840139_AddEmployee.Designer.cs">
+      <DependentUpon>201808030840139_AddEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,6 +73,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201807301026504_Initial.resx">
       <DependentUpon>201807301026504_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808030840139_AddEmployee.resx">
+      <DependentUpon>201808030840139_AddEmployee.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

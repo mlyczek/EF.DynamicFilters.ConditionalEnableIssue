@@ -52,6 +52,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BlogPost.cs" />
+    <Compile Include="BoughtItem.cs" />
+    <Compile Include="Car.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeeDetails.cs" />
     <Compile Include="Migrations\201807301026504_Initial.cs" />
@@ -62,8 +64,17 @@
     <Compile Include="Migrations\201808030840139_AddEmployee.Designer.cs">
       <DependentUpon>201808030840139_AddEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808070824567_AddShoppingModel.cs" />
+    <Compile Include="Migrations\201808070824567_AddShoppingModel.Designer.cs">
+      <DependentUpon>201808070824567_AddShoppingModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808070859554_AddCar.cs" />
+    <Compile Include="Migrations\201808070859554_AddCar.Designer.cs">
+      <DependentUpon>201808070859554_AddCar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShoppingCart.cs" />
     <Compile Include="TestDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +87,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808030840139_AddEmployee.resx">
       <DependentUpon>201808030840139_AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808070824567_AddShoppingModel.resx">
+      <DependentUpon>201808070824567_AddShoppingModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808070859554_AddCar.resx">
+      <DependentUpon>201808070859554_AddCar.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

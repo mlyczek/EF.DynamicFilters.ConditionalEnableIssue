@@ -95,6 +95,21 @@ namespace DbProject.Tests
             }
         }
 
+        [Test]
+        public void ShouldNotFailWithAnonymousProjection()
+        {
+            using (var context = new TestDbContext())
+            {
+                context.DisableAllFilters();
+
+                var result = context.ShoppingCarts
+                    .Select(x => new { CartName = x.Name })
+                    .ToList();
+
+                Assert.That(result, Has.Count.EqualTo(1));
+            }
+        }
+
         private class DroppingDatabaseInitializer : DropCreateDatabaseAlways<TestDbContext>
         {
             protected override void Seed(TestDbContext context)
